@@ -1,1 +1,0 @@
-# tyranpl.github.io
