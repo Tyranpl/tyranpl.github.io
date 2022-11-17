@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Humming Hawk</title>
@@ -10,25 +10,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body class="font-sans bg-slate-900">
+<body class="bg-slate-900" style="font-family:'Open Sans'">
     <header>
         <nav class="bg-slate-800 text-white h-16 py-4 text-center text-lg">
             Humming Hawk
         </nav>
     </header>
     <section id="about" class="text-white grid">
-        <div class="w-1/2 justify-self-center shadow shadow-indigo-500/50 mt-10 p-5">
+        <div class="xl:w-1/2 justify-self-center bg-slate-800 shadow-md shadow-zinc-900 mt-10 p-5">
             <img src="img/logo.png" width="30%" style="margin:auto;">
-            <strong>Humming Hawk</strong> - Jest to mój amatorski projekt, w którym zamierzam zbudować idealny bezzałogowy statek powietrzny z zastosowaniem do hackingu.
-            Ma to być dron w pełni modularny - mam tutaj na myśli, że możemy dowolnie podłączać i odłączać potrzebne nam moduły.
-            Jeżeli akurat potrzebujemy przechwycić, a następnie odtworzyć fale radiowe to podłączamy do tego odpowiedni moduł, a jeżeli chcemy np. tylko i wyłącznie
-            zrobić rekonesans to nie koniecznie potrzebujemy całego osprzętu do hakowania fal. Po co marnować miejsce i baterię na zbędne rzeczy.
-            Dron ma być cichy, wydajny i wytrzymały. Będę się starał zrobić to jak najlepiej i nie wiem czy mi się to uda, ponieważ jestem totalnym amatorem
-            w elektronice, a co dopiero w budowaniu pojazdów latających. Mam jednak chęci i cel, który zamierzam zrealizować. Jako, że jestem uczniem szkoły średniej
-            bez, póki co bez żadnego źródła dochodów poza kieszonkowym, każda pomoc finansowa jest mile widziana. Jeżeli chcesz mnie wesprzeć, będę bardzo wdzięczny i zapraszam na 
-            moją <a href="https://zrzutka.pl/2eckue" target="_blank" class="underline text-yellow-400">zrzutkę</a>.
+            <p><strong>Humming Hawk</strong> - Jest to mój amatorski projekt, w którym zamierzam zbudować idealny bezzałogowy statek powietrzny z zastosowaniem do hackingu. Główne założenia projektu:</p>
+            <ul class="list-disc ml-5">
+                <li>Cichy</li>
+                <li>Wydajny</li>
+                <li>Wytrzymały</li>
+                <li>Modularny</li>
+                <li>Autonomiczny</li>
+                <li>&lt250g</li>
+            </ul><br>
+            Będę się trzymał tych założeń od początku do końca lecz jestem pewien iż nie uda mi się tego osiągnąć od razu, ponieważ jestem totalnym amatorem
+            w elektronice, a co dopiero w budowaniu pojazdów latających. Mam jednak chęci i cel, który zamierzam zrealizować. Jako, że jestem uczniem szkoły średniej,
+            póki co bez żadnego źródła dochodów poza kieszonkowym, każda pomoc finansowa jest mile widziana. Jeżeli chcesz mnie wesprzeć, będę bardzo wdzięczny i zapraszam na 
+            moją <a href="https://zrzutka.pl/2eckue" target="_blank" class="underline text-amber-500">zrzutkę</a>.
         </div>
     </section>
-    
+    <div class="text-center mt-7 text-white text-2xl font-extrabold"><span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 to-gray-300">Fazy projektu:</span></div>
+    <section id="main-content" class="flex flex-row text-white mt-2 justify-center">
+        <div class="xl:basis-1/4 bg-slate-800 shadow-md shadow-zinc-900 mx-10 p-5">
+            <img src="img/prototype/box_min.png" width="20%" style="margin: auto;">
+            <span class="text-right">            <p>Prototyp aka <strong>"Pudło"</strong> - nie wygląda ani (na razie) nie lata :D</p>
+                <p> 
+                    <i>Last update: 17.11.2022</i><br>
+                    <a class="underline text-amber-500" href="box.html">Zobacz aktualizacje</a>
+                </p>
+            </span>
+        </div>
+        
+        <!-- <div class="basis-1/8 w-64 h-40 bg-zinc-600 shadow-md shadow-zinc-800 mx-10 p-5">s</div> -->
+    </section>
 </body>
 </html>

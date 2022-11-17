@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Humming Hawk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body class="bg-slate-900" style="font-family:'Open Sans'">
+    <header>
+        <nav class="bg-slate-800 text-white h-16 py-4 text-center text-lg">
+            Prototyp aka <strong>Pudło</strong>
+        </nav>
+    </header>
+    <section id="about" class="text-white grid">      
+        <div class="xl:w-1/2 justify-self-center bg-slate-800 shadow-md shadow-zinc-900 mt-10 p-5">
+            <span>Last update: 17.11.2022 - wstęp i główny zamysł dodane</span>
+            <img src="img/prototype/box_min.png" width="25%" style="margin:auto;">
+            <p>Checkpointy prototypu:</p>
+            <ul class="ml-5">
+                <!-- <li><i class="fa fa-check-square-o"></i> Lata</li> -->
+                <li><i class="fa fa-square-o"></i> Lata</li>
+                <li><i class="fa fa-square-o"></i> Komunikacja ziemia/powietrze</li>
+                <li><i class="fa fa-square-o"></i> Autopilot</li>
+                <li><i class="fa fa-square-o"></i> Cichy</li>
+                <li><i class="fa fa-square-o"></i><250g</li>
+            </ul><br>
+            Spis treści:
+            <ol class="ml-5 list-decimal">
+                <!-- <li><i class="fa fa-check-square-o"></i> Lata</li> -->
+                <li><a href='#1'>Wstęp i główny zamysł - (17.11.2022)</a></li>
+                <ul class="list-disc ml-5">
+                    <li><a href="#1.1">Dron</a></li>
+                    <li><a href="#1.2">Aparatura</a></li>
+                </ul>
+            </ol><br>
+        </div>
+    </section>
+    <section id="content" class="flex text-white mt-20 flex-col">
+        <div id="1" class="xl:w-1/2 self-center">
+            <div class="text-5xl font-extrabold ...">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-slate-400 to-violet-500">
+                    1. Wstęp i główny zamysł
+                </span>
+            </div>
+        </div>
+        <div class="xl:w-1/2 self-center mt-5" id="1.1">
+            <span class="text-xl font-bold">> 1.1 Dron</span>
+            <p class="indent-8">
+                Słowem wstępu. Może się będę powtarzał ale jest to amatorski projekt mający na celu stworzenie idealnego
+                bezzałogowego statku powietrznego z zastosowaniem do hackingu.
+                Wiadomo nic nie jest idealne ale do ideału można zawsze dążyć :D. Ma to być projekt Open Source
+                działający na licencji <a href="https://pl.wikipedia.org/wiki/Licencja_MIT" class="underline" target="_blank">MIT</a>.
+            </p><br>
+            <p>
+                Ale właściwie to co taki dron ma potrafić:
+            <ul class="list-disc ml-10">
+                <li>Recon</li>
+                <li>War flying</li>
+                <li>RF hacking</li>
+                <li>Jamming</li>
+                <li>Przechwytywanie handshake'ów WPA i PMKIDs</li>
+                <li>Skanowanie sieci</li>
+                <li>Przedłużanie sygnału</li>
+            </ul>
+            </p><br>
+            <p class="border border-dashed border-red-500 p-5 text-red-500">
+                Uwaga: Nie odpowiadam za wszelkie problemy prawne poskutkowane nieprawidłowym wykorzystaniem drona.
+                Jeżeli coś jest nie legalne po prostu tego nie rób.
+                Nie używaj funkcjonalności drona na nie swojej infrastrukturze bez odpowiedniego pozwolenia. Funkcje
+                tego drona są na razie koncepcją i nie będę robił rzeczy,
+                które są nielegalne w Polsce.
+            </p><br>
+            <p class='indent-8'>
+                Prototyp może nie wygląda zbyt ambitnie ale takie jest założenie. On ma działać, nie wyglądać. Gdy zacznie działać wtedy możemy zająć się designem :D.
+                <figure style="text-align:center">
+                    <img src="img/prototype/solid_edge_prototype_pic.PNG" width="70%" style="margin: auto;">
+                    <figcaption>Projekt drona w solid edgu (na tych pałąkach będą kiedyś silniki :D)</figcaption>
+                </figure>
+                <figure style="text-align:center">
+                    <img src="img/prototype/1668704547549.jpg" width="70%" style="margin: auto;">
+                    <figcaption>Jak już mówiłem nie wygląda ale już niedługo...</figcaption>
+                </figure>
+                <br>
+                Obudowa jest przeze mnie wydrukowana z PLA, a ramiona są rurkami pp-r o średnicy 16mm. Wszelkie pliki STL i schematy wrzucę, gdy prototyp się uniesie.<br>
+            </p>
+            <br>
+            <p class="indent-8">
+                Jeszcze kwestia wagi. Dlaczego &lt250g? A no temu, że wg. nowych norm z UE, aby latać <strong><u>legalnie</u></strong> dronem samoróbką potrzeba mieć uprawnienia kategorii <strong>A1</strong>
+                (które swoją drogą można w prosty sposób wyrobić na stronie <a href="https://drony.ulc.gov.pl/" target="_blank" class="underline text-amber-500">ULC</a>), oraz dron 
+                musi mieć masę &lt 250g, aby nie spowodować zbyt dużych obrażeń, gdyby nasz dron na kogoś spadł.
+            </p>
+        </div>
+        <div class="xl:w-1/2 self-center mt-5" id="1.2">
+            <span class="text-xl font-bold">> 1.2</span>
+            <p class="indent-8">
+                Plan jest taki, aby zrobić też własną aparaturę. Ogólnie to dron ma być autonomiczny i wykonywał zaprogramowane przez nas wcześniej misje sam, za pomocą autopilota.
+                Fajnie by było jednak, żeby możliwe też było sterowanie manualne i tutaj z pomocą przyjdzie nam nasza własna aparatura. Na razie to miejsce zostawiam <i><u>puste</u></i>...
+            </p>
+        </div>
+        <div class="xl:w-1/2 self-center mt-5">
+            <span class="text-xl font-bold">> ...</span>
+        </div>
+        <br>
+        <div class="xl:w-1/2 self-center mt-5 border border-solid border-sky-500 p-5 text-sky-500" style="text-align: center;">
+            <p>
+                Więcej treści wkrótce, jeżeli chcesz przyspieszyć rozwój projektu zapraszam na <a href="https://zrzutka.pl/2eckue" target="_blank" class="underline text-amber-500">zrzutkę</a>.
+            </p><br>
+            <div style="position: relative; width: 400px; height: 400px; overflow: hidden;margin: auto;"><iframe style="position: absolute; top:0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%;" src="https://zrzutka.pl/2eckue/widget/13" frameborder="0" scrolling="no"></iframe></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
